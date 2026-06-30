@@ -1,0 +1,18 @@
+# Secret files
+vars/devices.yml
+ansible/inventory.yml
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# OS files
+.DS_Store
+Thumbs.db
