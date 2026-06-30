@@ -1,0 +1,54 @@
+routers:
+  R1:
+    loopback:
+      interface: Loopback0
+      ip: 1.1.1.1
+      mask: 255.255.255.255
+    interfaces:
+      - name: e0/1
+        description: TO_R2
+        ip: 10.0.12.1
+        mask: 255.255.255.252
+      - name: e0/3
+        description: TO_R3
+        ip: 10.0.13.1
+        mask: 255.255.255.252
+    ospf:
+      process_id: 1
+      router_id: 1.1.1.1
+
+  R2:
+    loopback:
+      interface: Loopback0
+      ip: 2.2.2.2
+      mask: 255.255.255.255
+    interfaces:
+      - name: e0/1
+        description: TO_R1
+        ip: 10.0.12.2
+        mask: 255.255.255.252
+      - name: e0/2
+        description: TO_R3
+        ip: 10.0.23.1
+        mask: 255.255.255.252
+    ospf:
+      process_id: 1
+      router_id: 2.2.2.2
+
+  R3:
+    loopback:
+      interface: Loopback0
+      ip: 3.3.3.3
+      mask: 255.255.255.255
+    interfaces:
+      - name: e0/2
+        description: TO_R2
+        ip: 10.0.23.2
+        mask: 255.255.255.252
+      - name: e0/3
+        description: TO_R1
+        ip: 10.0.13.2
+        mask: 255.255.255.252
+    ospf:
+      process_id: 1
+      router_id: 3.3.3.3
