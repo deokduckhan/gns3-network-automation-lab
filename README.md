@@ -287,5 +287,4 @@ ansible/inventory.yml
 
 ## 📎 References
 
-- GitHub Repository: https://github.com/deokduckhan/gns3-network-automation-lab
-- Lab Report: Notion 링크 추가 예정
+- Lab Report: [Notion] https://app.notion.com/p/38e02d4ee37f805cb6ffdef7bccb6c5b?source=copy_link
