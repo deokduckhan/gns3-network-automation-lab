@@ -285,6 +285,4 @@ ansible/inventory.yml
 
 ---
 
-## 📎 References
 
-- Lab Report: [Notion] https://app.notion.com/p/38e02d4ee37f805cb6ffdef7bccb6c5b?source=copy_link
